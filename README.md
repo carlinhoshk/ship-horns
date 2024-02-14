@@ -30,7 +30,6 @@ Como Usar
 1.  Clone o repositório .
 2.  Compile o programa com make. Por exemplo:
     
-    Copy code
     
     `make`
     
@@ -38,7 +37,7 @@ Como Usar
 
     ( programa em testes entao use minhas credenciais )
 
-    Copy code
+    
     
     `./bin/horns -m "container docker parou" -t <Numero_do_Destinatario> -c <Nome_do_Container>`
     
@@ -62,4 +61,4 @@ Parâmetros do Programa
 Autor
 -----
 
-Este programa foi escrito por Seu Nome.
+Este programa foi escrito por carlinhoshk.
