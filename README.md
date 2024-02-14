@@ -26,24 +26,27 @@ Requisitos
 
 Como Usar
 ---------
+Claro, aqui está o texto formatado corretamente para Markdown:
 
-1.  Clone o repositório .
-2.  Compile o programa com make. Por exemplo:
-    
-    
-    `make`
-    
-3.  Execute o programa, fornecendo os parâmetros necessários:
+1. Clone o repositório.
 
-    ( programa em testes entao use minhas credenciais )
+2. Compile o programa com make. Por exemplo:
 
-    
-    
-    `./bin/horns -m "container docker parou" -t <Numero_do_Destinatario> -c <Nome_do_Container>`
-    
-  ou use suas credenciais
+    ```bash
+    make
+    ```
 
-    Substitua `<SID_da_Conta_Twilio>`, `<Token_de_Autenticacao_Twilio>`, `<Mensagem_para_enviar>`, `<Numero_do_Remetente>`, `<Numero_do_Destinatario>` e `<Nome_do_Container>` 
+3. Execute o programa, fornecendo os parâmetros necessários:
+
+    (programa em testes então use minhas credenciais)
+
+    ```bash
+    ./bin/horns -m "container docker parou" -t <Numero_do_Destinatario> -c <Nome_do_Container>
+    ```
+
+    ou use suas credenciais
+
+    Substitua `<SID_da_Conta_Twilio>`, `<Token_de_Autenticacao_Twilio>`, `<Mensagem_para_enviar>`, `<Numero_do_Remetente>`, `<Numero_do_Destinatario>` e `<Nome_do_Container>`.
 
 Parâmetros do Programa
 ----------------------
@@ -60,5 +63,4 @@ Parâmetros do Programa
 
 Autor
 -----
-
-Este programa foi escrito por carlinhoshk.
+  carlinhoshk.
