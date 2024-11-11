@@ -1,0 +1,41 @@
+name: C Project CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Escolhe o ambiente de execução
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y libcurl4-openssl-dev
+
+      - name: Build the project
+        run: make build
+
+      - name: Test the build
+        run: |
+          if [ -f "bin/horns" ]; then
+            echo "Build successful"
+          else
+            echo "Build failed"
+            exit 1
+          fi
+
+  clean:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Clean build artifacts
+        run: make clean
+
