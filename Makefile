@@ -9,7 +9,8 @@ OUT = bin/horns
 
 all: build
 
-build: $(SOURCES)
+build: 
+	mkdir -p bin
 	$(CXX) -o $(OUT) $(INCLUDE) $(LDFLAGS) $(CFLAGS) $(SOURCES) $(LDLIBS)
 
 clean:
